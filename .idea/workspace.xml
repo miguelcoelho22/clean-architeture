@@ -5,12 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bd2e354b-a739-4899-aad6-8bfbd0375f37" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/org/example/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/usecase/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/src/main/java/org/example/application/gateway/ConsultBalanceGateway.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/main/java/org/example/application/gateway/ConsultBalanceGateway.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/src/main/java/org/example/application/usecaseimpl/ConsultBalanceUseCaseImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/main/java/org/example/application/usecaseimpl/ConsultBalanceUseCaseImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/org/example/core/domain/TransactionPin.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/org/example/core/domain/TransactionPin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/org/example/core/domain/Wallet.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/org/example/core/domain/Wallet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/org/example/core/exception/enums/ErrorCodeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/org/example/core/exception/enums/ErrorCodeEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/usecase/src/main/java/org/example/usecase/CreateTransactionPinUseCase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/usecase/src/main/java/org/example/usecase/CreateTransactionUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/usecase/src/main/java/org/example/usecase/CreateTransactionUseCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/usecase/src/main/java/org/example/usecase/CreateUserUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/usecase/src/main/java/org/example/usecase/CreateUserUseCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/usecase/src/main/java/org/example/usecase/FIndUserByTestNumberUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/usecase/src/main/java/org/example/usecase/FindWalletByTaxNumberUseCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/usecase/src/main/java/org/example/usecase/TransactionValidateUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/usecase/src/main/java/org/example/usecase/TransactionValidateUseCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/usecase/src/main/java/org/example/usecase/TransferUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/usecase/src/main/java/org/example/usecase/TransferUseCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/usecase/src/main/java/org/example/usecase/UserAuthenticateUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/usecase/src/main/java/org/example/usecase/UserAuthenticateUseCase.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,8 +88,13 @@
       <recent name="org.example.core.domain.enums" />
       <recent name="org.example.core.domain" />
     </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="org.example.core.exception" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.example.core.exception.enums" />
+      <recent name="org.example.core.exception" />
+      <recent name="org.example.usecase" />
     </key>
   </component>
   <component name="RunManager">
@@ -120,11 +133,6 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/application/src/main/java/org/example/Main.java</url>
-          <line>13</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/infrastructure/src/main/java/org/example/Main.java</url>
           <line>13</line>
