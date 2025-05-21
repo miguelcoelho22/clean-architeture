@@ -3,9 +3,7 @@ package org.example.application.usecaseimpl;
 import org.example.application.gateway.TransferGateway;
 import org.example.core.domain.Transaction;
 import org.example.core.domain.Wallet;
-import org.example.core.exception.InternalServerErrorException;
-import org.example.core.exception.NotficationException;
-import org.example.core.exception.TransferException;
+import org.example.core.exception.*;
 import org.example.core.exception.enums.ErrorCodeEnum;
 import org.example.usecase.*;
 
@@ -19,18 +17,23 @@ public class TransferUseCaseImpl implements TransferUseCase {
     private TransferGateway transferGateway;
     private UserNotificationUseCase userNotificationUseCase;
 
-    public TransferUseCaseImpl(FindWalletByTaxNumberUseCase fIndUserByTestNumberUseCase, TransactionValidateUseCase transactionValidateUseCase, CreateTransactionUseCase createTransactionUseCase, TransferGateway transferGateway, UserNotificationUseCase userNotificationUseCase) {
+    private TransactionPinValidateUseCase transactionPinValidateUseCase;
+    public TransferUseCaseImpl(FindWalletByTaxNumberUseCase fIndUserByTestNumberUseCase, TransactionValidateUseCase transactionValidateUseCase, CreateTransactionUseCase createTransactionUseCase, TransferGateway transferGateway, UserNotificationUseCase userNotificationUseCase, TransactionPinValidateUseCase transactionPinValidateUseCase) {
         this.fIndUserByTestNumberUseCase = fIndUserByTestNumberUseCase;
         this.transactionValidateUseCase = transactionValidateUseCase;
         this.createTransactionUseCase = createTransactionUseCase;
         this.transferGateway = transferGateway;
         this.userNotificationUseCase = userNotificationUseCase;
+        this.transactionPinValidateUseCase = transactionPinValidateUseCase;
     }
 
+
     @Override
-    public Boolean tranfer(String fromTaxNumber, String toTaxNumber, BigDecimal value) throws InternalServerErrorException, TransferException, NotficationException {
+    public Boolean tranfer(String fromTaxNumber, String toTaxNumber, BigDecimal value, String pin) throws InternalServerErrorException, TransferException, NotficationException, NotFoundException, PinException {
         Wallet from = fIndUserByTestNumberUseCase.findByTaxNumber(fromTaxNumber);
         Wallet to = fIndUserByTestNumberUseCase.findByTaxNumber(toTaxNumber);
+
+        transactionPinValidateUseCase.validate(from.getTransactionPin());
 
         from.transfer(value);
         to.receiveTransfer(value);

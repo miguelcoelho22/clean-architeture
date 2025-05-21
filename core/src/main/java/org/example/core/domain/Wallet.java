@@ -9,20 +9,23 @@ import java.time.LocalDateTime;
 
 public class Wallet {
     private Long id;
+    private TransactionPin transactionPin;
     private BigDecimal balance;
     private User user;
     private LocalDateTime createdAt;
     private LocalDateTime updateAt;
 
-    public Wallet(Long id, BigDecimal balance, User user, LocalDateTime createdAt, LocalDateTime updateAt) {
+    public Wallet(Long id, TransactionPin transactionPin, BigDecimal balance, User user, LocalDateTime createdAt, LocalDateTime updateAt) {
         this.id = id;
+        this.transactionPin = transactionPin;
         this.balance = balance;
         this.user = user;
         this.createdAt = createdAt;
         this.updateAt = updateAt;
     }
 
-    public Wallet(BigDecimal balance, User user) {
+    public Wallet(TransactionPin transactionPin, BigDecimal balance, User user) {
+        this.transactionPin = transactionPin;
         this.balance = balance;
         this.user = user;
         this.createdAt = LocalDateTime.now();
@@ -37,6 +40,14 @@ public class Wallet {
 
     public void setId(Long id) {
         this.id = id;
+    }
+
+    public TransactionPin getTransactionPin() {
+        return transactionPin;
+    }
+
+    public void setTransactionPin(TransactionPin transactionPin) {
+        this.transactionPin = transactionPin;
     }
 
     public BigDecimal getBalance() {
@@ -66,7 +77,6 @@ public class Wallet {
         this.balance.add(value);
     }
 
-
     public void setUser(User user) {
         this.user = user;
     }
@@ -81,5 +91,29 @@ public class Wallet {
 
     public void setUpdateAt(LocalDateTime updateAt) {
         this.updateAt = updateAt;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Wallet wallet)) return false;
+
+        if (getId() != null ? !getId().equals(wallet.getId()) : wallet.getId() != null) return false;
+        if (!getTransactionPin().equals(wallet.getTransactionPin())) return false;
+        if (!getBalance().equals(wallet.getBalance())) return false;
+        if (!getUser().equals(wallet.getUser())) return false;
+        if (!getCreatedAt().equals(wallet.getCreatedAt())) return false;
+        return getUpdateAt() != null ? getUpdateAt().equals(wallet.getUpdateAt()) : wallet.getUpdateAt() == null;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = getId() != null ? getId().hashCode() : 0;
+        result = 31 * result + getTransactionPin().hashCode();
+        result = 31 * result + getBalance().hashCode();
+        result = 31 * result + getUser().hashCode();
+        result = 31 * result + getCreatedAt().hashCode();
+        result = 31 * result + (getUpdateAt() != null ? getUpdateAt().hashCode() : 0);
+        return result;
     }
 }

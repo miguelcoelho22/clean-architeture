@@ -16,8 +16,8 @@ public enum ErrorCodeEnum {
     WA0001("carteira nao encontrada", "WA-0001"),
     NO0001("erro na notificaçao do usuario", "NO-0001"),
     ATH0001("houve um erro na authenticaçao", "ATH-0001"),
-
-
+    PIN0001("pin de transaçao bloqueado", "PIN-0001"),
+    PIN0002("pin incorreto %d tentativas restantes", "PIN-0002"),
 
 
     ;
@@ -43,5 +43,9 @@ public enum ErrorCodeEnum {
 
     public void setCode(String code) {
         this.code = code;
+    }
+
+    public static String pin001GetMessage(Integer attempt){
+        return String.format(String.valueOf(PIN0002), attempt);
     }
 }
