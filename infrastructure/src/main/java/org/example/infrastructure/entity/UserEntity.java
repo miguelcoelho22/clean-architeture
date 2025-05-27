@@ -1,4 +1,4 @@
-package org.example.entity;
+package org.example.infrastructure.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
@@ -39,7 +39,7 @@ public class UserEntity {
     @Column(name = "CreatedAt", nullable = false)
     private LocalDateTime createdAt;
 
-    @Column(name = "UpdateAt", nullable = false)
+    @Column(name = "UpdateAt")
     private LocalDateTime updateAt;
 
 }

@@ -1,4 +1,4 @@
-package org.example.entity;
+package org.example.infrastructure.entity;
 
 import jakarta.persistence.*;
 import org.example.core.domain.enums.TransactionStatusEnum;

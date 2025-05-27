@@ -1,7 +1,6 @@
-package org.example.repository;
+package org.example.infrastructure.repository;
 
-import org.example.entity.TransactionEntity;
-import org.example.entity.WalletEntity;
+import org.example.infrastructure.entity.WalletEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface WalletEntityRepository extends JpaRepository<WalletEntity, Long> {
