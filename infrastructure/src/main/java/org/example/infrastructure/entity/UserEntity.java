@@ -32,7 +32,7 @@ public class UserEntity {
     @Column(name = "Fullname", nullable = false)
     private String fullname;
 
-    @Column(name = "Tyoe", nullable = false)
+    @Column(name = "Type", nullable = false)
     @Enumerated(EnumType.STRING)
     private UserTypeEnum type;
 

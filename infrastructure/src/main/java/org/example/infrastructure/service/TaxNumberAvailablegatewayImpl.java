@@ -2,7 +2,9 @@ package org.example.infrastructure.service;
 
 import org.example.application.gateway.TaxNumberAvailableGateway;
 import org.example.infrastructure.repository.UserEntityRepository;
+import org.springframework.stereotype.Service;
 
+@Service
 public class TaxNumberAvailablegatewayImpl implements TaxNumberAvailableGateway {
 
     private final UserEntityRepository userEntityRepository;

@@ -16,8 +16,9 @@ public class UserController {
     private CreateUserUseCase createUserUseCase;
 
     private UserMapper userMapper;
-    public UserController(CreateUserUseCase createUserUseCase) {
+    public UserController(CreateUserUseCase createUserUseCase, UserMapper userMapper) {
         this.createUserUseCase = createUserUseCase;
+        this.userMapper = userMapper;
     }
 
     @PostMapping("/createUser")

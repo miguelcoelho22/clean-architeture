@@ -2,7 +2,9 @@ package org.example.infrastructure.service;
 
 import org.example.application.gateway.EmailAvailableGateway;
 import org.example.infrastructure.repository.UserEntityRepository;
+import org.springframework.stereotype.Service;
 
+@Service
 public class EmailAvailableGatewayImpl implements EmailAvailableGateway {
 
     private UserEntityRepository userEntityRepository;

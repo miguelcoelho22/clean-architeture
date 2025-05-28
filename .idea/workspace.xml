@@ -6,15 +6,15 @@
   <component name="ChangeListManager">
     <list default="true" id="bd2e354b-a739-4899-aad6-8bfbd0375f37" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/src/main/java/org/example/application/usecaseimpl/CreateUserUseCaseImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/main/java/org/example/application/usecaseimpl/CreateUserUseCaseImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/src/main/java/org/example/application/usecaseimpl/TaxNumberAvailableUseCaseImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/main/java/org/example/application/usecaseimpl/TaxNumberAvailableUseCaseImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/src/main/java/org/example/core/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/org/example/core/domain/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/org/example/entity/TransactionEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/main/java/org/example/infrastructure/entity/TransactionEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/org/example/entity/TransactionPinEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/main/java/org/example/infrastructure/entity/TransactionPinEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/org/example/entity/UserEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/main/java/org/example/infrastructure/entity/UserEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/org/example/entity/WalletEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/main/java/org/example/infrastructure/entity/WalletEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/org/example/repository/TransactionEntityRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/main/java/org/example/infrastructure/repository/TransactionEntityRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/org/example/repository/TransactionPinEntityRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/main/java/org/example/infrastructure/repository/TransactionPinEntityRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/org/example/repository/UserEntityRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/main/java/org/example/infrastructure/repository/UserEntityRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/org/example/repository/WalletEntityRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/main/java/org/example/infrastructure/repository/WalletEntityRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/org/example/infrastructure/config/UserConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/main/java/org/example/infrastructure/config/UserConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/org/example/infrastructure/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/main/java/org/example/infrastructure/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/org/example/infrastructure/entity/UserEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/main/java/org/example/infrastructure/entity/UserEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/org/example/infrastructure/mapper/WalletMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/main/java/org/example/infrastructure/mapper/WalletMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/org/example/infrastructure/service/EmailAvailableGatewayImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/main/java/org/example/infrastructure/service/EmailAvailableGatewayImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/org/example/infrastructure/service/TaxNumberAvailablegatewayImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/main/java/org/example/infrastructure/service/TaxNumberAvailablegatewayImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,25 +59,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.clean-architeture-pic-pay [:Main.main()].executor": "Run",
-    "Gradle.clean-architeture-pic-pay:usecase [:usecase:Main.main()].executor": "Run",
-    "Gradle.clean-architeture:infrastructure [:infrastructure:DesafioPicPayApplication.main()].executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "jdk.selected.JAVA_MODULE": "17",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/User/Documents/GitHub/clean-architeture/infrastructure/src/main/java/org/example/infrastructure",
-    "onboarding.tips.debug.path": "C:/Users/User/Documents/GitHub/java/clean-architeture-pic-pay/usecase/src/main/java/org/example/Main.java",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.clean-architeture-pic-pay [:Main.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.clean-architeture-pic-pay:usecase [:usecase:Main.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.clean-architeture:infrastructure [:infrastructure:DesafioPicPayApplication.main()].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/User/Documents/GitHub/clean-architeture/infrastructure/src/main/java/org/example/infrastructure&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/User/Documents/GitHub/java/clean-architeture-pic-pay/usecase/src/main/java/org/example/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="org.example.infrastructure.dto.request" />
@@ -101,6 +101,12 @@
     </key>
   </component>
   <component name="RunManager">
+    <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.DesafioPicPayApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="clean-architeture" />
       <method v="2">
