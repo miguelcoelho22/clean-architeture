@@ -1,21 +1,21 @@
 package org.example.application.usecaseimpl;
 
-import org.example.application.gateway.ConsultBalanceGateway;
-import org.example.core.domain.Wallet;
 import org.example.usecase.ConsultBalanceUseCase;
+import org.example.usecase.FindWalletByTaxNumberUseCase;
+import org.example.usecase.TaxNumberAvailableUseCase;
 
 import java.math.BigDecimal;
 
 public class ConsultBalanceUseCaseImpl implements ConsultBalanceUseCase {
 
-    private ConsultBalanceGateway consultBalanceGateway;
+    private FindWalletByTaxNumberUseCase findWalletByTaxNumberUseCase;
 
-    public ConsultBalanceUseCaseImpl(ConsultBalanceGateway consultBalanceGateway) {
-        this.consultBalanceGateway = consultBalanceGateway;
+    public ConsultBalanceUseCaseImpl(FindWalletByTaxNumberUseCase findWalletByTaxNumberUseCase) {
+        this.findWalletByTaxNumberUseCase = findWalletByTaxNumberUseCase;
     }
 
     @Override
-    public BigDecimal consult(Wallet wallet) {
-        return consultBalanceGateway.consult(wallet);
+    public BigDecimal consult(String taxNumber) throws Exception {
+        return findWalletByTaxNumberUseCase.findByTaxNumber(taxNumber).getBalance();
     }
 }
