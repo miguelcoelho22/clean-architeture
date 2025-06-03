@@ -16,7 +16,7 @@ public class CreateTransactionUseCaseImpl implements CreateTransactionUseCase {
 
     @Override
     public Transaction create(Transaction transaction) throws TransferException {
-        var transactionSaved =  createTransactionGateway.crate(transaction);
+        var transactionSaved =  createTransactionGateway.create(transaction);
 
         if(transactionSaved == null){
             throw new TransferException(ErrorCodeEnum.TR0003.getCode(), ErrorCodeEnum.TR0003.getCode());

@@ -5,11 +5,11 @@ import org.example.infrastructure.repository.UserEntityRepository;
 import org.springframework.stereotype.Service;
 
 @Service
-public class TaxNumberAvailablegatewayImpl implements TaxNumberAvailableGateway {
+public class TaxNumberAvailableGatewayImpl implements TaxNumberAvailableGateway {
 
     private final UserEntityRepository userEntityRepository;
 
-    public TaxNumberAvailablegatewayImpl(UserEntityRepository userEntityRepository) {
+    public TaxNumberAvailableGatewayImpl(UserEntityRepository userEntityRepository) {
         this.userEntityRepository = userEntityRepository;
     }
 

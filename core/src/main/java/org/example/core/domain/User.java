@@ -17,7 +17,7 @@ public class User {
     private LocalDateTime createdAt;
     private LocalDateTime updateAt;
 
-    public User(UUID id, String email, String password, TaxNumber taxNumber, String fullname, UserTypeEnum type, TransactionPin transactionPin, LocalDateTime createdAt, LocalDateTime updateAt) {
+    public User(UUID id, String email, String password, TaxNumber taxNumber, String fullname, UserTypeEnum type, LocalDateTime createdAt, LocalDateTime updateAt) {
         this.id = id;
         this.email = email;
         this.password = password;

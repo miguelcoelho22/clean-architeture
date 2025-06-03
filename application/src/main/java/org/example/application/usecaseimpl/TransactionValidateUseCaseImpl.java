@@ -7,6 +7,7 @@ import org.example.core.exception.TransferException;
 import org.example.core.exception.enums.ErrorCodeEnum;
 import org.example.usecase.TransactionValidateUseCase;
 
+
 public class TransactionValidateUseCaseImpl implements TransactionValidateUseCase {
 
     private TransactionValidateGateway transactionValidateGateway;
@@ -15,7 +16,6 @@ public class TransactionValidateUseCaseImpl implements TransactionValidateUseCas
         if(!transactionValidateGateway.validate(transaction)){
             throw new TransferException(ErrorCodeEnum.TR0004.getCode(), ErrorCodeEnum.TR0004.getCode());
         }
-
         return true;
     }
 }

@@ -1,5 +1,6 @@
 package org.example.infrastructure.service;
 
+import jakarta.transaction.Transactional;
 import org.example.application.gateway.CreateUserGateway;
 import org.example.core.domain.User;
 import org.example.core.domain.Wallet;
@@ -35,6 +36,7 @@ public class CreateUserGatewayImpl implements CreateUserGateway {
     }
 
     @Override
+    @Transactional
     public Boolean create(User user, Wallet wallet) {
         try{
             var userSaved = userEntityRepository.save(userMapper.toUserEntity(user));

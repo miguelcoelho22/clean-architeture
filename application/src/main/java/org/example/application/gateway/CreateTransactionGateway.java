@@ -4,5 +4,5 @@ import org.example.core.domain.Transaction;
 
 public interface CreateTransactionGateway {
 
-    Transaction crate(Transaction transaction);
+    Transaction create(Transaction transaction);
 }

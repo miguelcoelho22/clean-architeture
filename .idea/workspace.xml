@@ -6,15 +6,18 @@
   <component name="ChangeListManager">
     <list default="true" id="bd2e354b-a739-4899-aad6-8bfbd0375f37" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/src/main/java/org/example/application/usecaseimpl/CreateUserUseCaseImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/main/java/org/example/application/usecaseimpl/CreateUserUseCaseImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/src/main/java/org/example/application/usecaseimpl/TaxNumberAvailableUseCaseImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/main/java/org/example/application/usecaseimpl/TaxNumberAvailableUseCaseImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/src/main/java/org/example/application/gateway/CreateTransactionGateway.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/main/java/org/example/application/gateway/CreateTransactionGateway.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/src/main/java/org/example/application/gateway/FindWalletByTaxNumberGateway.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/main/java/org/example/application/gateway/FindWalletByTaxNumberGateway.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/src/main/java/org/example/application/usecaseimpl/CreateTransactionUseCaseImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/main/java/org/example/application/usecaseimpl/CreateTransactionUseCaseImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/src/main/java/org/example/application/usecaseimpl/FindWalletByTaxNumberUseCaseimpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/main/java/org/example/application/usecaseimpl/FindWalletByTaxNumberUseCaseimpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/src/main/java/org/example/core/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/org/example/core/domain/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/org/example/infrastructure/config/UserConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/main/java/org/example/infrastructure/config/UserConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/org/example/infrastructure/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/main/java/org/example/infrastructure/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/org/example/infrastructure/entity/UserEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/main/java/org/example/infrastructure/entity/UserEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/org/example/infrastructure/mapper/TransactionPinMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/main/java/org/example/infrastructure/mapper/TransactionPinMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/org/example/infrastructure/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/main/java/org/example/infrastructure/mapper/UserMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/org/example/infrastructure/mapper/WalletMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/main/java/org/example/infrastructure/mapper/WalletMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/org/example/infrastructure/service/EmailAvailableGatewayImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/main/java/org/example/infrastructure/service/EmailAvailableGatewayImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/org/example/infrastructure/service/TaxNumberAvailablegatewayImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/main/java/org/example/infrastructure/service/TaxNumberAvailablegatewayImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/org/example/infrastructure/repository/WalletEntityRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/main/java/org/example/infrastructure/repository/WalletEntityRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/org/example/infrastructure/service/CreateUserGatewayImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/main/java/org/example/infrastructure/service/CreateUserGatewayImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/org/example/infrastructure/service/TaxNumberAvailablegatewayImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/main/java/org/example/infrastructure/service/TaxNumberAvailableGatewayImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/usecase/src/main/java/org/example/usecase/FindWalletByTaxNumberUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/usecase/src/main/java/org/example/usecase/FindWalletByTaxNumberUseCase.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +73,7 @@
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/User/Documents/GitHub/clean-architeture/infrastructure/src/main/java/org/example/infrastructure&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/User/Documents/GitHub/java/email-service&quot;,
     &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/User/Documents/GitHub/java/clean-architeture-pic-pay/usecase/src/main/java/org/example/Main.java&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
