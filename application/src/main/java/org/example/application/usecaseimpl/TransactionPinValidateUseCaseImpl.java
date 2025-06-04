@@ -6,13 +6,13 @@ import org.example.core.exception.PinException;
 import org.example.core.exception.TransferException;
 import org.example.core.exception.enums.ErrorCodeEnum;
 import org.example.usecase.TransactionPinValidateUseCase;
-import org.example.usecase.UpdateTransactionPin;
+import org.example.usecase.UpdateTransactionPinUseCase;
 
 public class TransactionPinValidateUseCaseImpl implements TransactionPinValidateUseCase {
 
     private TransactionPinValidateGateway transactionPinValidateGateway;
-    private UpdateTransactionPin updateTransactionPin;
-    public TransactionPinValidateUseCaseImpl(TransactionPinValidateGateway transactionPinValidateGateway, UpdateTransactionPin updateTransactionPin) {
+    private UpdateTransactionPinUseCase updateTransactionPin;
+    public TransactionPinValidateUseCaseImpl(TransactionPinValidateGateway transactionPinValidateGateway, UpdateTransactionPinUseCase updateTransactionPin) {
         this.transactionPinValidateGateway = transactionPinValidateGateway;
         this.updateTransactionPin = updateTransactionPin;
     }

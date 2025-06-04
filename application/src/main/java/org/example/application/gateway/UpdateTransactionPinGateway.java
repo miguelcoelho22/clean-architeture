@@ -1,8 +1,8 @@
-package org.example.usecase;
+package org.example.application.gateway;
 
 import org.example.core.domain.TransactionPin;
 
-public interface UpdateTransactionPin {
+public interface UpdateTransactionPinGateway {
 
     TransactionPin update(TransactionPin transactionPin);
 }
